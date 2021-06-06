@@ -34,7 +34,7 @@ Replace the port with the default value in the Makefile (ARDUINO_USB).
 Then you can upload the program via:
 
 ```bash
-make deploy
+make flash
 ```
 
 ## References

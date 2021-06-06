@@ -20,9 +20,9 @@ LIBDIR = /../AVR-Programming-Library
 ##########        (Can override.  See bottom of file.)          ##########
 ##########------------------------------------------------------##########
 
-PROGRAMMER_TYPE = stk500
+PROGRAMMER_TYPE = arduino #stk500
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = -P com12
+PROGRAMMER_ARGS = -P /dev/ttyUSB0
 
 ##########------------------------------------------------------##########
 ##########                  Program Locations                   ##########

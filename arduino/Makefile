@@ -14,7 +14,7 @@ led: led.o
 led.o: led.c
 	avr-gcc $(CFLAGS) -c -o $@ $<
 
-flash: led.hex
+deploy: led.hex
 	avrdude -F -V -c arduino -p ATMEGA328p -P ${ARDUINO_USB} -b 115200 -U flash:w:led.hex  
 
 clean: FRC
