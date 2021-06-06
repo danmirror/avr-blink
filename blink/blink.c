@@ -12,10 +12,10 @@ int main(void) {
   // ------ Event loop ------ //
   while (1) {
 
-    PORTE = 0b00000001;          /* Turn on first LED bit/pin in PORTB */
+    PORTB = 0b00000001;          /* Turn on first LED bit/pin in PORTB */
     _delay_ms(1000);                                           /* wait */
 
-    PORTE = 0b00000000;          /* Turn off all B pins, including LED */
+    PORTB = 0b00000000;          /* Turn off all B pins, including LED */
     _delay_ms(1000);                                           /* wait */
 
   }                                                  /* End event loop */

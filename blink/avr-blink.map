@@ -403,5 +403,5 @@ END GROUP
 
 .debug_macro
  *(.debug_macro)
-OUTPUT(blink.elf elf32-avr)
+OUTPUT(avr-blink.elf elf32-avr)
 LOAD linker stubs
